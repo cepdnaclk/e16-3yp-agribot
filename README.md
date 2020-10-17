@@ -8,7 +8,7 @@
 		<div>
 			<div>Denuke Dissanayake - E/16/089 - e16089@eng.pdn.ac.lk</div>
 			<div>Maneesha Randeniya - E/16/313 - e16313@eng.pdn.ac.lk</div>
-			<div>Maneesha Randeniya - E/16/313 - e16313@eng.pdn.ac.lk</div>
+			<div>Nipun Dewanarayana - E/16/360 - e16360@eng.pdn.ac.lk</div>
 		</div>
     <h4>Description</h4>
 		<p>

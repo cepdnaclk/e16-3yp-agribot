@@ -1,4 +1,9 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
 <body>
 	<h3>e16-3yp-agribot</h3>
 
@@ -12,4 +17,5 @@
 	</center>
 	
 </body>
+</html>
 

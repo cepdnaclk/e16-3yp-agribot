@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<h3>e16-3yp-agribot</h3>
+	<h2>Autonomous Agricultural Robot</h2>
 </head>
 <body>
 	<h4>Group Members</h4>
@@ -19,7 +19,7 @@
       </div>
 		</p><br>
     
-   <h4>Adviser</h4>
+   <h4>Advisers</h4>
     <div> Dr Isuru Nawinna </div>
     <div> Dr Ziyan Marrikkar </div>
 		<h4>Links :</h4>

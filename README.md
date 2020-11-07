@@ -19,6 +19,14 @@
       </div>
 		</p>
    <img src="images/diagram.jpg" width="400" height="400" > 
+	
+    <div>
+    	<h3>Cad model of the Agribot</h3><br>
+	<img src="images/cad1.jpg" width="1047" height="771" > <br>
+	<img src="images/cad2.jpg" width="894" height="597" > <br><br>
+    
+    </div>
+	
    <h4>Advisers</h4>
     <div> Dr Isuru Nawinna </div>
     <div> Dr Ziyan Marrikkar </div>

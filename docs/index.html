@@ -1,34 +1,488 @@
-<!DOCTYPE html>
-<html>
+﻿ <!DOCTYPE html>
+<html lang="en">
 <head>
-	<h2>Autonomous Agricultural Robot</h2>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>www.Agribot.com</title>
+    <!--  Bootstrap Style -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!--  Font-Awesome Style -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--  Animation Style -->
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <!--  Pretty Photo Style -->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+    <!--  Google Font Style -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!--  Custom Style -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-	<h4>Group Members</h4>
-		<div>
-			<div>Denuke Dissanayake - E/16/089 - e16089@eng.pdn.ac.lk</div>
-			<div>Maneesha Randeniya - E/16/313 - e16313@eng.pdn.ac.lk</div>
-			<div>Maneesha Randeniya - E/16/313 - e16313@eng.pdn.ac.lk</div>
-		</div>
-    <h4>Description</h4>
-		<p>
-			<div>AgriBot is an automated robot. A web app is used to collect the information and displayed to the user like weather conditions and soil conditions as well as the number of seeds planted and planted areas. A remote is used to give commands to the robot.
-      </div><br>
-			<div>The main purpose of our Robot is plant seeds over large farm areas!!!!</div><br>
-      <div>Using our mobile application, we can enter the row length as a parameter to the AWS server and the robot will fetch it, then using the encoders of the gear motors we can move the robot, that distance value. In that row, we can plant seeds with a gap. We can repeat this process autonomously. User can also decide the number ofmrows he wants. If the farm is really big, we can use GPS to track our robot roughly. Using this method, we can cover the whole area without using cameras or other complex methods.
-      </div>
-		</p>
-   <img src="diagram.jpg" width="400" height="400" > 
-   <h4>Advisers</h4>
-    <div> Dr Isuru Nawinna </div>
-    <div> Dr Ziyan Marrikkar </div>
-		<h4>Links :</h4>
-			<div>
-				<div><a href="https://www.pdn.ac.lk/academics/academics.php/ "> University of Peradeniya</a> </div>
-				<div><a href="http://eng.pdn.ac.lk/"> Faculty of Engineering</a></div>
-        <div><a href="http://www.ce.pdn.ac.lk/"> Department of Computer Engineering </a> </div>
-			</div>
-	
-	
+    <div id="pre-div">
+        <div id="loader">
+        </div>
+    </div>
+    <!--/. PRELOADER END -->
+    <div class="navbar navbar-default navbar-fixed-top move-me ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo2.png" class="navbar-brand-logo " alt="" />
+
+                </a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li >
+                        <a href="#about">About
+
+                        </a>
+
+                    </li>
+                    <li >
+                        <a href="#design">Design
+
+                        </a>
+
+                    </li>
+
+                    <li >
+                        <a href="#port-folio">Progress
+                        </a>
+
+                    </li>
+
+                    <li >
+                        <a href="#help">Demonstration
+                        </a>
+
+                    </li>
+
+                    <li >
+                        <a href="#team">Team
+                        </a>
+
+                    </li>
+                    <li >
+                        <a href="#contact">Contact Us
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--./ NAV BAR END -->
+    <div id="home" >
+        <div class="overlay">
+        <div class="container">
+        	<div class="row ">
+                    <div class="col-lg-12 col-md-12 head-text">
+                        <h1 style="font-size: 40" >AGRIBOT</h1>
+                	</div>
+        	</div>
+    	</div>
+    </div>
+    </div>
+    <!--./ HOME SECTION END -->
+    <div id="about" >
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 sub-head">
+                    <h2  data-wow-delay="0.3s" class="wow rollIn animated" ><strong>Problem and Solution </strong></h2>
+                    <p  class="sub-head-p">
+                    	Lack of laborers, the difficulty of finding labourers or can't afford daily wages for them are some of the main problems that today's farmers are facing. Not only that less knowledge about environmental conditions and pests also a problem faced by farmers. <br><br>
+	                    The solution to the problem will be an automated robot to automated the seeding process as well as to identify the environmental conditions.<br><br>	  This AgriBot is capable of plant seed automated way and identifies the environmental conditions as well.  
+                    </p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 col-md-4">
+                    <div class="media wow rotateIn animated" data-wow-delay="0.2s">
+                        <div class="pull-left">
+                            <i class="fa fa-recycle fa-4x  "></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">We Promote Recycling</h3>
+                            <p >
+                                Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
+                                Aenean faucibus luctus enim. 
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="media wow rotateIn animated" data-wow-delay="0.3s">
+                        <div class="pull-left">
+                            <i class="fa fa-history fa-4x  "></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Eco-Friendly Techniques</h3>
+                            <p>
+                                Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
+                                Aenean faucibus luctus enim. 
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 wow bounceInDown animated" style="padding: 10px;" data-wow-delay="0.6s"   >
+                    <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="item">
+
+                                <img src="assets/img/agri1.jpeg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/agri2.jpeg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="item active">
+                                <img src="assets/img/agri3.jpg" class="img-thumbnail" alt="">
+                            </div>
+                        </div>
+                        <!--INDICATORS-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-slider" data-slide-to="0" class=""></li>
+                            <li data-target="#carousel-slider" data-slide-to="1" class=""></li>
+                            <li data-target="#carousel-slider" data-slide-to="2" class="active"></li>
+                        </ol>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="media wow rotateIn animated" data-wow-delay="0.4s">
+                        <div class="pull-left">
+                            <i class="fa fa-star-o fa-4x  "></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Waste Reduction</h3>
+                            <p>
+                                Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
+                                Aenean faucibus luctus enim. 
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="media wow rotateIn animated" data-wow-delay="0.5s">
+                        <div class="pull-left">
+                            <i class="fa fa-life-ring fa-4x  "></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Resource Utilization</h3>
+                            <p>
+                                Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
+                                Aenean faucibus luctus enim. 
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    <!--./ ABOUT SECTION END -->
+
+    <div id="design" class="pad-top-botm" >
+        <div class="container">
+            <div class="row text-center ">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <h2 data-wow-delay="0.3s" class="wow rollIn animated"><strong>Solution Architecture</strong></h2>
+                    <p class="sub-head-p-b">AgriBot is an automated robot which is used to plant seeds in agricultural fields. 
+        			<br><br>
+					Three Core parts of the AgriBot,
+					<ul class="li-a">
+						<li>Robot</li>
+						<li>Mobile App</li>
+						<li>Server </li>
+					</ul>
+					 </p>
+                    <h2 class="sub-head-p-c">Robot</h2>
+                    <h3>3D Model of the Robot</h3>
+                
+                <div class="row ">
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.4s">
+
+
+                        <img src="assets/img/robo1.jpeg" class="img-responsive " alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.5s">
+
+
+                        <img src="assets/img/robo2.jpeg" class="img-responsive " alt="" />
+                   
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.6s">
+
+
+                        <img src="assets/img/robo3.jpeg" class="img-responsive " alt="" />
+                        
+                    </div>
+                </div>
+
+            </div>
+            <h3>Circuit Diagrams</h3>
+            <div class="row ">
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.4s">
+
+
+                        <img src="assets/img/circuit1.jpeg" class="img-responsive " alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.5s">
+
+
+                        <img src="assets/img/circuit6.jpeg" class="img-responsive " alt="" />
+                   
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.6s">
+
+
+                        <img src="assets/img/circuit3.jpeg" class="img-responsive " alt="" />
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.4s">
+
+
+                        <img src="assets/img/circuit5.jpeg" class="img-responsive " alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.5s">
+
+
+                        <img src="assets/img/circuit4.jpeg" class="img-responsive " alt="" />
+                   
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.6s">
+
+
+                        <img src="assets/img/circuit7.jpeg" class="img-responsive " alt="" />
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="sub-head-p-c">Mobile App</h2>
+            	<div class="row ">
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.4s">
+
+
+                        <img src="assets/img/app1.jpeg" class="img-responsive " alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.5s">
+
+
+                        <img src="assets/img/app2.jpeg" class="img-responsive " alt="" />
+                   
+                    </div>
+                </div>
+               
+
+            </div>
+
+
+            </div>
+            </div>
+            
+
+           
+
+        </div>
+    </div>
+    <!--./ GALLERY/PORTFOLIO SECTION END -->
+    <div id="help" >
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                        <h2 data-wow-delay="0.3s" class="wow rollIn animated"><strong>HOW IS IT WORK ?</strong></h2>
+                        <p class="sub-head">Checkout this video , which you will get more idea about abribot. </p>
+                    </div>
+                </div>
+                <div class="row ">
+
+                    <div class="col-lg-6 col-lg-offset-1  col-md-6 col-md-offset-1">
+                        <iframe src="https://www.youtube.com/watch?v=kw_4RY7kjoA&ab_channel=CTUniversityt" class="vedio-style wow rotateIn animated" data-wow-delay="0.4s"></iframe>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4" style="padding-top: 50px;">
+
+                        <div class="media wow rotateIn animated" data-wow-delay="0.5s">
+                            <div class="pull-left">
+                                <i class="fa fa-star-o fa-4x  "></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Watch This Video</h3>
+                                <p>
+                                  This is the practically demonstration of our project. 
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="media wow rotateIn animated" data-wow-delay="0.6s">
+                            <div class="pull-left">
+                                <i class="fa fa-history fa-4x  "></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">More informations </h3>
+                                <p>
+                                   check this github repository link.
+                                   <br>
+                                   <a href="https://github.com/cepdnaclk/e16-3yp-agribot.git">https://github.com/cepdnaclk/e16-3yp-agribot.git</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!--./ HELP SECTION END -->
+    <br>
+
+   
+     <div id="team" class="pad-top-botm" >
+        <div class="container">
+            <div class="row text-center ">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <h2 data-wow-delay="0.3s" class="wow rollIn animated"><strong>Our Team</strong></h2>
+                    
+                
+                <div class="row ">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+                   
+
+
+                        <img src="assets/img/capture2.png" class="img-responsive " alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" >
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <h2 data-wow-delay="0.3s" class="wow rollIn animated"><strong>CONTACT US </strong></h2>
+                    
+
+                    <p class="sub-head  wow rotateIn animated" data-wow-delay="0.4s"><strong>ADDRESS :</strong> Department of Computer Engineering,Faculty of Engineering,University of Peradeniya</p>
+                    <p class="sub-head  wow rotateIn animated" data-wow-delay="0.4s"><strong>CONTACT :</strong> 0766418830 / 0714285456</p>
+                </div>
+            </div>
+            <div class="row  text-center wow rotateIn animated" data-wow-delay="0.4s">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <a href="http://www.ce.pdn.ac.lk/">  <img src="assets/img/aces.jpeg" alt="" /> </a>
+                     <a href="http://eng.pdn.ac.lk/"> <img src="assets/img/efac.jpg" alt="" /></a>
+                     <a href="https://www.pdn.ac.lk/"> <img src="assets/img/uop.jpeg" alt="" /></a>
+                    </div>
+                </div>
+            <div class="row pad-top-botm">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control wow rotateIn animated" data-wow-delay="0.5s" required="required" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control wow rotateIn animated" required="required" data-wow-delay="0.6s" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message"  required="required" data-wow-delay="0.7s" class="wow rotateIn animated form-control" style="min-height: 150px;" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block btn-lg wow rotateIn animated " data-wow-delay="0.8s">SUBMIT REQUEST</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <!--./ CONTACT SECTION END -->
+    <div id="footser-end">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                 &copy; 2020 AgriBot Team <a href="http://www.binarytheme.com/" style="color:#fff;" target="_blank" ></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--./ FOOTER SECTION END -->
+    <!--  Jquery Core Script -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="assets/js/bootstrap.js"></script>
+     <!--  WOW Script -->
+    <script src="assets/js/wow.min.js"></script>
+    <!--  Scrolling Script -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!--  PrettyPhoto Script -->
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <!--  Custom Scripts -->
+    <script src="assets/js/custom.js"></script>
+   
 </body>
 </html>

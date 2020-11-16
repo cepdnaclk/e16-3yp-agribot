@@ -16,7 +16,7 @@
 using those informations robot will go to each point and drill the soil, plant a seed.
       </div><br>
 			<div>The main purpose of our Robot is plant seeds over large farm areas!!!!</div><br>
-      <div>As we said earlier Our mobile app give the basic control signals and parameters of the field to the AWS server and the robot will fetch it and create a map of the field using some algorithms, then using the encoders of the gear motors and gyroscope we can move the robot throughout the map and plant the seeds, After we send the basic params from our mobile app whole process works as a autonomous manner. User have to give the number of rows he want to seed, gap between two seeds and two rows and length of a each row. Using this method, we can cover the whole area.
+      <div>As we said earlier Our mobile app give the basic control signals and parameters of the field to the AWS server and the robot will fetch it and create a map of the field using some algorithms, then using the encoders of the gear motors and gyroscope we can move the robot throughout the map and plant the seeds, After we send the basic params from our mobile app whole process works in autonomous manner. User have to give the number of rows he want to seed, gap between two seeds and two rows and length of a each row. Using this method, we can cover the whole area.
       </div>
 		</p>
 	<br>
@@ -35,8 +35,8 @@ works really well, it can map the whole field and seeding. Agribot is only drill
 light weight and echo friendly. This is the best way to seeding small seeds in big areas. Another thing is very easy to operate through 
 a user friendly mobile app.
 	</div>
-	<div>
-		<h5>AgriBot for Greenhouse farming</h5><br>
+	<div><br><br><br>
+		<h4>AgriBot for Greenhouse farming</h4><br>
 	</div>
 	<div>
 		AgriBot is the best solution for modern Greenhouses because those are full covered areas which have sensitive sensors all over the place.

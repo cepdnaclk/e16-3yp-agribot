@@ -9,7 +9,7 @@
 			<div>Denuke Dissanayake - E/16/089 - e16089@eng.pdn.ac.lk</div>
 			<div>Maneesha Randeniya - E/16/313 - e16313@eng.pdn.ac.lk</div>
 			<div>Nipun Dewanarayana - E/16/360 - e16360@eng.pdn.ac.lk</div>
-		</div>
+		</div><br><br>
     <h4>Description</h4>
 		<p>
 			<div>AgriBot is an automated robot. A mobile app is used to collect the information and displayed a graphical change oftemperature and humidity to the user. Mobile app is used to give start, stop, pause commands to the robot and details about the field, like row length, gap of seeds, gap of rows, how many rows like that.
@@ -21,7 +21,6 @@ using those informations robot will go to each point and drill the soil, plant a
 		</p>
 	<br>
 	<h4>Why we need an AgriBot</h4>
-	<br>
 	<p>
 	<div>
 		Smart Farming is a widely growing area. First we talk about the smart farming. In smart farming user can monitor their field via smart
@@ -35,8 +34,8 @@ works really well, it can map the whole field and seeding. Agribot is only drill
 light weight and echo friendly. This is the best way to seeding small seeds in big areas. Another thing is very easy to operate through 
 a user friendly mobile app.
 	</div>
-	<div><br><br><br>
-		<h4>AgriBot for Greenhouse farming</h4><br>
+	<div><br>
+		<h4>AgriBot for Greenhouse farming</h4>
 	</div>
 	<div>
 		AgriBot is the best solution for modern Greenhouses because those are full covered areas which have sensitive sensors all over the place.
@@ -45,7 +44,7 @@ lines all over the place. For areas like this you cant use heavy machinaries or 
 	</div><br>
 	</p>
 	
-   <img src="docs/assets/img/diagrams/dig1.jpg" width="600" height="400" > 
+   <br><img src="docs/assets/img/diagrams/dig1.jpg" width="600" height="400" > 
 	
    <h4>Advisers</h4>
     <div> Dr Isuru Nawinna </div>

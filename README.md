@@ -45,7 +45,7 @@ lines all over the place. For areas like this you cant use heavy machinaries or 
 	</div><br>
 	</p>
 	
-   <img src="images/diagram.jpg" width="400" height="400" > 
+   <img src="docs/assets/img/diagrams/dig1.jpg" width="600" height="400" > 
 	
    <h4>Advisers</h4>
     <div> Dr Isuru Nawinna </div>

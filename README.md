@@ -20,8 +20,9 @@
 		</p>
    <img src="images/diagram.jpg" width="400" height="400" > 
    <h4>Advisers</h4>
-    <div> Dr Isuru Nawinna </div>
-    <div> Dr Ziyan Marrikkar </div>
+    	<div> Dr Isuru Nawinna </div>
+   	<div> Dr Ziyan Maraikar </div>
+    	<div> Dr Upul Jayasinghe </div>
 		<h4>Links :</h4>
 			<div>
 				<div><a href="https://www.pdn.ac.lk/academics/academics.php/ "> University of Peradeniya</a> </div>

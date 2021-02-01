@@ -47,8 +47,9 @@ lines all over the place. For areas like this you cant use heavy machinaries or 
    <br><img src="docs/assets/img/diagrams/dig1.jpg" width="600" height="400" > 
 	
    <h4>Advisers</h4>
-    <div> Dr Isuru Nawinna </div>
-    <div> Dr Ziyan Marrikkar </div>
+    	<div> Dr Isuru Nawinna </div>
+   	<div> Dr Ziyan Maraikar </div>
+    	<div> Dr Upul Jayasinghe </div>
 		<h4>Links :</h4>
 			<div>
 				<div><a href="https://www.pdn.ac.lk/academics/academics.php/ "> University of Peradeniya</a> </div>

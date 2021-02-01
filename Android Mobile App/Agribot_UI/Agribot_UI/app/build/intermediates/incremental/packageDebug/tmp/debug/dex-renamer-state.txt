@@ -1,4 +1,0 @@
-#Tue Nov 10 13:39:04 IST 2020
-base.0=D\:\\currently_working\\Agribot_UI\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

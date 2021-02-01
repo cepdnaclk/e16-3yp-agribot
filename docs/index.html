@@ -232,10 +232,23 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/mob.jpg" alt="" />
+                                <img class="img-fluid" src="assets/img/portfolio/android1.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading" style="text-align: center"><strong>Overview</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#userInterface">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/ui110.JPG" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading" style="text-align: center"><strong>Frontend UI</strong></div>
                             </div>
                         </div>
                     </div>
@@ -245,10 +258,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/UI.PNG" alt="" />
+                                <img class="img-fluid" src="assets/img/portfolio/testing.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading" style="text-align: center"><strong>UI </strong></div>
+                                <div class="portfolio-caption-heading" style="text-align: center"><strong>Testing</strong></div>
                             </div>
                         </div>
                     </div>
@@ -280,7 +293,20 @@
                                 <img class="img-fluid" src="assets/img/portfolio/aws2.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading" style="text-align: center"><strong>Technology</strong></div>
+                                <div class="portfolio-caption-heading" style="text-align: center"><strong>Deploy</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/aws2.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading" style="text-align: center"><strong>Database</strong></div>
                             </div>
                         </div>
                     </div>
@@ -706,6 +732,62 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="portfolio-modal modal fade" id="userInterface" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">frontend ui</h2>
+                                    <p class="item-intro text-muted">This images shows the user interface of the Android mobile application.</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 my-3">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/app_ss/app1.png" alt="" />
+                                                <p style="text-align: justify">This is the 1st impression of user. When user run the app, appliication will start with this splash screen. </p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 my-3">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/app_ss/app2.png" alt="" />
+                                                <p style="text-align: justify">This is the login screen UI. User need to enter credential which will be provided by seller for specific robot. Each robot has unique username and password.</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 my-3">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/app_ss/app3.png" alt="" />
+                                                <p style="text-align: justify">After user logged in, he/she can see the configuration fragment UI. This is the UI which user will use to configure the robot. As well as, it will display whether robot is connected with server.</p>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 my-3">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/app_ss/app6.png" alt="" />
+                                                <p style="text-align: justify">This UI will display the weather report. This report include data which was send by the robot. Currently robot implemented with temperature and humdity sensors only. Therefore, app will fetch only temperature & humidity.</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 my-3">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/app_ss/app7.png" alt="" />
+                                                <p style="text-align: justify">This UI includes the details of the purchesed robot. Data will be fetched from firebase database along with login. Each data are unique with the login credentials.</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 my-3">
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/app_ss/app10.png" alt="" />
+                                                <p style="text-align: justify">When user clicks the logout in bottom navigation bar, this confirmation box will appear. User may choose yes or no to logout or keep stay login.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Modal 5-->
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">

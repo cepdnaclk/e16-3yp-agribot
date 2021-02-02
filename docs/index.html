@@ -228,7 +228,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#">
+                            <a class="portfolio-link" data-toggle="modal" href="#AppOverview">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -273,7 +273,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#">
+                            <a class="portfolio-link" data-toggle="modal" href="#ServerOverview">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -299,11 +299,11 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#">
+                            <a class="portfolio-link" data-toggle="modal" href="#database">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/aws2.jpg" alt="" />
+                                <img class="img-fluid" src="assets/img/portfolio/firebase4.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading" style="text-align: center"><strong>Database</strong></div>
@@ -733,6 +733,61 @@
             </div>
         </div>
 
+        <div class="portfolio-modal modal fade" id="AppOverview" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">android application</h2>
+                                    <p class="item-intro text-muted">This is the overview of Android mobile application</p>
+                                    
+                                    <p style="text-align: justify">Android mobile application is available for the AgriBot. The app is designed using Android Studio. Mainly the app is used to configure the robot while temperature and humidity readings can get through the mobile app.</p>
+                                    
+                                    <h5 class="text-muted" style="text-align: left">Overview</h5>
+								
+									<ul style="text-align: justify">
+										<li>Start of the app user have to enter the Product Id to Login </li>	
+										<li>Using that ID, App will subscribe to corresponding topics </li>
+										<li>App will display the sensor data and connection state of the Robot </li>
+										<li>Also user can publish initial plantation instructions to Robot</li>	
+										<li>And essential control signals to autonomous process</li>
+									</ul>
+
+									<h5 class="text-muted" style="text-align: left">Scalability</h5>
+								
+									<ul style="text-align: justify">
+										<li>Firebase Database can easily increase storage and entries. </li>	
+										<li>New hardware devices can be added</li>
+										<li>App can simply connect with any Device for a given ID. </li>
+										<li>In the broker, support the Asynchronous process</li>	
+										<li>Can handle multiple topics at a time.</li>
+									</ul>
+
+									<h5 class="text-muted" style="text-align: left">Reliability</h5>
+								
+									<ul style="text-align: justify">
+										<li>Responsive UI </li>	
+										<li>Connect with any device simply entering the device ID </li>
+										<li>Unique topics to isolation</li>
+										<li>Check the connectivity of the device</li>	
+										<li>No need to have steady internet connection to work</li>
+									</ul>
+
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="portfolio-modal modal fade" id="userInterface" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -867,10 +922,93 @@
 	                                    <div class="col-md-12 col-sm-6 my-3">
 	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/ui2.JPG" alt="" />
 	                                    </div>
-	                                </div>		
+	                                </div>
+
+	                                <h5 class="text-muted" style="text-align: left">Summary report</h5>		
+	                                <div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/summary.jpeg" alt="" />
+	                                    </div>
+                                    </div>
+
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
                                         Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-modal modal fade" id="ServerOverview" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">overview</h2>
+                                    <p class="item-intro text-muted">Overview of the cloud deployment,MQTT and Technologies.</p> 
+
+                                    <h5 class="text-muted" style="text-align: left">Overview </h5>                                     
+                                    <ul style="text-align: justify">
+                                    	<li>Create AWS EC2 instance and install Mosquitto MQTT Broker</li>
+                                    	<li>Using EC2 IP address and port, mobile app and Robot can connect to the MQTT broker</li>
+                                    	<li>MQTT broker will handle the publications and subscriptions</li>
+                                    	<li>We created firebase database and entries for each Robot</li>
+                                    	<li>Using the database app will connect with the correct device</li>
+                                    </ul>
+
+                                    <h5 class="text-muted" style="text-align: left">Cloud Deployment </h5>                                     
+                                    <ul style="text-align: justify">
+                                    	<li>Create EC2 instance, Ubuntu virtual machine</li>
+                                    	<li>Install mosquitto MQTT brokerr</li>
+                                    	<li>Used IP of VM to connect the application</li>
+                                    	<li>Setup security rules of EC2
+                                    		<ul><li>Give access only to port numbers 1883 and 22 (MQTT, SSH)</li></ul>
+                                    		
+                                		</li>
+                                    	
+                                    </ul>
+
+                                    <h5 class="text-muted" style="text-align: left">MQTT Setup</h5>                                     
+                                    <ul style="text-align: justify">
+                                    	<li>Used Mosquitto broker to handle mqtt clients (App,Device)</li>
+                                    	<li>Set Password protection to the broker
+                                    		<ul>
+                                    			<li>Not anyone can publish or subscribe to broker and increase the traffic</li>
+                                    			<li>when we want to publish or subscribe we have to use the password</li>
+                                    		</ul>
+                                    	</li>
+                                    	<li>Used unique topics for each device 
+                                    		<ul>
+                                    			<li>to identify whether Robot is connected or not</li>
+                                    		</ul></li>
+                                    	<li>Set MQTT Last Will message </li>
+                                    	<li>Publish QOS 2 messages
+                                    		<ul>
+                                    			<li>Data send only one time.</li>
+                                    		</ul></li>
+                                    </ul>
+                                    <div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/tools.JPG" alt="" />
+	                                    </div>
+                                    </div>
+                                    <h5 class="text-muted" style="text-align: left">Highlevel Diagram</h5>
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/highlevel.jpeg" alt="" />
+	                                    </div>
+
+                                    
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -891,7 +1029,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Deploy in AWS</h2>
                                     <p class="item-intro text-muted">Steps to follow deploy in AWS server.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
+                                 
                                     <p style="text-align: justify">The Internet is composed two types of machines: a server or a client. A server provide services to you while the client request for the service. <br>To ensure that our MQTT broker(the service) can be accessed using other computer or electronic devices anytime, we need to install the broker to a server machine that is always turned on and connected to the internet. To do this, we rent a virtual machine on AWS that functions like a computer.</p>
                                     <ul style="text-align: justify">
                                     	<li>Go to AWS Management Console  & Select EC2.</li>
@@ -968,7 +1106,7 @@
 
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -979,6 +1117,56 @@
         </div>
         <!-- Modal 6-->
         <div class="portfolio-modal modal fade" id="database" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">database</h2>
+                                    <p class="item-intro text-muted">Overview about Firebase database</p>
+                                    
+                                    <h5 class="text-muted" style="text-align: left">Overview </h5>                                     
+                                    <ul style="text-align: justify">
+                                    	<li>Firebase realtime NoSQL database.</li>
+                                    	<li>There is a one entry for every agribot device</li>
+                                    	<li>Used for Login process</li>
+                                    	<li>Using that data, app will assign unique client id
+                                    		<ul><li>Because of that, only one app can connect to a device at the time</li></ul>
+                                    	</li>
+                                    	Using that data, app and device share data via unique topic
+                                    		<ul><li>Useful to isolate other devices data</li></ul>
+                                    	</li>
+                                    	<li>No write access for users</li>
+                                    	<li>Easy to retrieve and scale the database</li>
+                                    	
+                                    </ul>
+                                    <div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/database/realdata.jpeg" alt="" />
+	                                    </div> 
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/database/realdata1.jpeg" alt="" />
+	                                    </div> 
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/database/realdata3.jpeg" alt="" />
+	                                    </div> 
+	                                    </div>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Modal 6-->
+        <div class="portfolio-modal modal fade" id="sampleToUse" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>

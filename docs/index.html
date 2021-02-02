@@ -254,7 +254,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#">
+                            <a class="portfolio-link" data-toggle="modal" href="#testing">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -286,7 +286,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#">
+                            <a class="portfolio-link" data-toggle="modal" href="#deploy">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -490,7 +490,7 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">Copyright © Agribot 2020</div>
+                    <div class="col-lg-4 text-lg-left">Copyright © Agribots 2021</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/Randeniya_M?fbclid=IwAR1jzeMjMCECoyyFCHC5uvQn6Ymudf4Ls24PEzPml8tDwUkDilOmtnsbVsM"  target="_blank"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/maneesha.randeniya/"  target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -789,7 +789,7 @@
         </div>
 
         <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="testing" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -798,15 +798,76 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Southwest</li>
-                                        <li>Category: Website Design</li>
-                                    </ul>
+                                    <h2 class="text-uppercase">Testing</h2>
+                                    <p class="item-intro text-muted">Tests that need to be done during the App building</p>
+                                    <ul  style="text-align: justify">
+                                    	<li>Testings were done during the development of the app to identify the problems with the mobile app. ( Connectivity, User Inputs etc… )</li>
+                                    	<li>Used test cases to check the expected values come as the output.</li>
+										<li>Easier than manually testing each case over and over again. 
+										</li>
+									</ul>								
+									<h5 class="text-muted" style="text-align: left">1. Subscribe the Broker</h5>
+								
+									<ul style="text-align: justify">
+										<li>Checked the subscription - connectivity between the Mobile app and the EC2 Broker. </li>	
+										<li>This is important because through the Broker only mobile app get the readings from the Robot. </li>
+										<li>Though an IP is correct, invalid topic can be subscribed. But this won’t happen in the app because topics are assigned when user successfully login to the app ( Using correct ID and the Password). </li>
+										<li>Subscription is tested using mosquitto broker(Representing Sensors of the Robot) also; using Temperature and Humidity values. </li>	
+									</ul>
+									<div class="row">
+	                                    <div class="col-md-12 col-sm-6 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/sub1.JPG" alt="" />
+	                                    </div>
+	                                    <div class="col-md-12 col-sm-6 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/sub3.jpeg" alt="" />
+	                                    
+	                                    </div>
+	                                    <div class="col-md-12 col-sm-6 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/sub3.jpeg" alt="" />
+	                                    </div>
+	                                </div>								
+
+	                                <h5 class="text-muted" style="text-align: left">2. Publish to Broker</h5>
+								
+									<ul style="text-align: justify">
+										<li>Checked the Publish - connectivity between the mobile app and the EC2 Broker</li>	
+										<li>It is important to check whether only the correct values are delivered to the Broker from the mobile app. </li>
+										<li>Terminal is used as the Robot to check the received values are correct. </li>				
+									</ul>
+									<div class="row">
+	                                    <div class="col-md-12 col-sm-6 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/pub.JPG" alt="" />
+	                                    </div>
+	                                    <div class="col-md-12 col-sm-6 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/pub2.JPG" alt="" />
+	                                     </div>
+	                                    
+	                                </div>		
+	                                <h5 class="text-muted" style="text-align: left">3.	User Inputs</h5>
+								
+									<ul style="text-align: justify">
+										<li>Most critical place the Robot can go wrong is with User Inputs. </li>	
+										<li>Important to check whether correct values are input by the User to the app.</li>			
+									</ul>
+									<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/uin.JPG" alt="" />
+	                                    </div>
+	                                </div>								
+									<h5 class="text-muted" style="text-align: left">4.	UI test with espresso </h5>
+								
+									<ul style="text-align: justify">
+										<li>Additional test to check the functionality of the login page using espresso with test cases. </li>	
+													
+									</ul>
+									<div class="row">
+	                                    <div class="col-md-12 col-sm-6 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/ui1.JPG" alt="" />
+	                                    </div>
+	                                    <div class="col-md-12 col-sm-6 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/testing/ui2.JPG" alt="" />
+	                                    </div>
+	                                </div>		
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
                                         Close Project
@@ -819,7 +880,7 @@
             </div>
         </div>
         <!-- Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="deploy" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -828,15 +889,113 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Deploy in AWS</h2>
+                                    <p class="item-intro text-muted">Steps to follow deploy in AWS server.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
+                                    <p style="text-align: justify">The Internet is composed two types of machines: a server or a client. A server provide services to you while the client request for the service. <br>To ensure that our MQTT broker(the service) can be accessed using other computer or electronic devices anytime, we need to install the broker to a server machine that is always turned on and connected to the internet. To do this, we rent a virtual machine on AWS that functions like a computer.</p>
+                                    <ul style="text-align: justify">
+                                    	<li>Go to AWS Management Console  & Select EC2.</li>
+                                    	<div class="row">
+		                                    <div class="col-md-12 col-sm-12 my-3">
+		                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/1.JPG" alt="" />
+		                                    </div>
+	                                    </div>
+	                                    <li>Select Launch Instances</li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/2.JPG" alt="" />
+	                                    </div>
+	                                    </div>
+	                                    <li>Select the ubuntu server.</li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/3.JPG" alt="" />
+	                                    </div>
+	                                    </div>
+	                                    <li>Select “ Free tier Eligible” Option & Click “Next: Configure Instance Details”</li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/4.JPG" alt="" />
+	                                    </div>
+	                                    </div>
+	                                    <li>In “Configure Security Group” Tab add above rules using “Add Rule” option. Then Click “ Review and Launch”</li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/5.JPG" alt="" />
+	                                    </div>
+	                                    </div>
+	                                    <li>Click “Launch” </li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/6.JPG" alt="" />
+	                                    </div>
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/7.JPG" alt="" />
+	                                    </div> 
+	                                    </div>
+	                                    <li>“Create a new key pair” option & Give a “Key pair name” ,Then Download the key pair</li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/8.JPG" alt="" />
+	                                    </div> 
+	                                    </div>
+	                                    <li>Newly Created instance is Running there in instances.</li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/9.JPG" alt="" />
+	                                    </div> 
+	                                    </div>
+	                                    <li>Details of the instance. “Public IPv4 address” is used to connect with in the instance.</li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/11.JPG" alt="" />
+	                                    </div> 
+	                                    </div>
+	                                    <li>Start, Stop or Connect the Instance can be done by write clicking on the instance. </li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/12.JPG" alt="" />
+	                                    </div> 
+	                                    </div>
+	                                    <li>When select “Connect” this dialog box is displayed.  </li>
+                                    	<div class="row">
+	                                    <div class="col-md-12 col-sm-12 my-3">
+	                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ec2/13.JPG" alt="" />
+	                                    </div> 
+	                                    </div>
+	                                </div>	
+                                    </ul>
+
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 6-->
+        <div class="portfolio-modal modal fade" id="database" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Deploy in AWS</h2>
+                                    <p class="item-intro text-muted">Steps to follow deploy in AWS server.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Window</li>
-                                        <li>Category: Photography</li>
+                                    
+                                    <ul>
+                                    	<li>1. Go to AWS Management Console  & Select EC2.</li>
                                     </ul>
+
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
                                         Close Project

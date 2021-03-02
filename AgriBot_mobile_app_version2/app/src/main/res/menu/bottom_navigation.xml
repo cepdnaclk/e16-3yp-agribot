@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_config"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Panel" />
+    <item
+        android:id="@+id/nav_params"
+        android:icon="@drawable/ic_tune"
+        android:title="Config" />
+    <item
+        android:id="@+id/nav_sensor_data"
+        android:icon="@drawable/ic_sensor_readings"
+        android:title="Sensors" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_device_info"
+        android:title="Device" />
+</menu>

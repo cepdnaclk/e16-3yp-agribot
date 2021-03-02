@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Device">
+
+    <TextView
+        android:id="@+id/textViewDeviceTitle"
+        android:layout_width="203dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/device_info2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_devinfo"
+        android:layout_width="375dp"
+        android:layout_height="354dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.333">
+
+        <TextView
+            android:id="@+id/textViewVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/version"
+            android:textColor="#EB393838"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/chipset"
+            android:textColor="#EB393838"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVer" />
+
+        <TextView
+            android:id="@+id/textViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/product_id"
+            android:textColor="#EB393838"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewChip" />
+
+        <TextView
+            android:id="@+id/textViewPasswrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/password"
+            android:textColor="#EB393838"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.139"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewID" />
+
+        <TextView
+            android:id="@+id/textViewOwn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/owner"
+            android:textColor="#EB393838"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPasswrd" />
+
+        <TextView
+            android:id="@+id/textViewIM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/imei"
+            android:textColor="#EB393838"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOwn" />
+
+        <TextView
+            android:id="@+id/textViewVersionData"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#EB5E5D5D"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewChipData"
+            app:layout_constraintStart_toEndOf="@+id/textViewVer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewChipData"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#EB5E5D5D"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewChip"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVersionData" />
+
+        <TextView
+            android:id="@+id/textViewIDData"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#EB5E5D5D"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewID"
+            app:layout_constraintTop_toBottomOf="@+id/textViewChipData" />
+
+        <TextView
+            android:id="@+id/textViewPasswwordData"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#EB5E5D5D"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewPasswrd"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIDData" />
+
+        <TextView
+            android:id="@+id/textViewOwnerData"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#EB5E5D5D"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewOwn"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPasswwordData" />
+
+        <TextView
+            android:id="@+id/textViewImiData"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#EB5E5D5D"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewIM"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOwnerData" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

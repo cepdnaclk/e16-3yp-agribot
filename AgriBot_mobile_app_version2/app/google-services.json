@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "121387222616",
+    "project_id": "agribot-login",
+    "storage_bucket": "agribot-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121387222616:android:d4e4b0c01f048474f16c2d",
+        "android_client_info": {
+          "package_name": "com.example.agribot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121387222616-e8mgpg56hb92sbqgda5m7vj7l908ai6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBxFD6uDqYhAmFXADVxKOmxlB1lA2iWVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121387222616-e8mgpg56hb92sbqgda5m7vj7l908ai6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

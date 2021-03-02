@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settingsMenu"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/deviceInfo"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/device_info" />
+    <item
+        android:id="@+id/logoutMenu"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        android:title="@string/logout" />
+</menu>

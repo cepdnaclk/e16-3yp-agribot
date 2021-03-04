@@ -1,0 +1,4 @@
+#Tue Mar 02 15:48:20 IST 2021
+base.0=C\:\\Users\\Nipun Dewenarayane\\Desktop\\agribot\\milestone4\\AgriBot_mobile_app\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

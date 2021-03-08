@@ -10,7 +10,7 @@
 			<div>Maneesha Randeniya - E/16/313 - e16313@eng.pdn.ac.lk</div>
 			<div>Nipun Dewanarayana - E/16/360 - e16360@eng.pdn.ac.lk</div>
 		</div><br>
-	<a href="cepdnaclk.github.io/e16-3yp-agribot/">Our website</a>
+	<a href="https://cepdnaclk.github.io/e16-3yp-agribot/">Our website</a>
 	<br>
     <h4>Description</h4>
 		<p>

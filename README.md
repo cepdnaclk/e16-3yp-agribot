@@ -14,7 +14,7 @@
 	<br>
     <h4>Description</h4>
 		<p>
-			<div>AgriBot is an automated robot. A mobile app is used to collect the information and displayed a graphical change oftemperature and humidity to the user. Mobile app is used to give start, stop, pause commands to the robot and details about the field, like row length, gap of seeds, gap of rows, how many rows like that.
+			<div>AgriBot is an automated robot. A mobile app is used to collect the information and displayed a graphical change of temperature and humidity to the user. Mobile app is used to give start, stop, pause commands to the robot and details about the field, like row length, gap of seeds, gap of rows, how many rows like that.
 using those informations robot will go to each point and drill the soil, plant a seed.
       </div><br>
 			<div>The main purpose of our Robot is plant seeds over large farm areas!!!!</div><br>
